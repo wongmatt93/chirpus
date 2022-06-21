@@ -1,0 +1,90 @@
+/* resets */
+body,
+h1,
+ul {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #f9fafc;
+}
+
+header {
+  margin: 12px;
+}
+
+h1 {
+  padding-bottom: 5px;
+  color: #000;
+}
+
+header h1 {
+  font-size: 13px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* two separate lists but neither require padding nor bullets so adding them to main ul header */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav li {
+  padding-bottom: 5px;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: #69696a;
+}
+
+button {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 19px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+main {
+  margin: 12px;
+}
+
+main p {
+  border-left: 2px solid #69696a;
+  padding-left: 12px;
+  color: #69696a;
+  font-size: 12px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(247, 193, 162, 0.7);
+  font-size: 12px;
+}
+
+footer p {
+  margin: 8px 12px;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer li {
+  margin-right: 12px;
+}
