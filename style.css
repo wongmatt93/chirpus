@@ -14,15 +14,15 @@ header {
   margin: 12px;
 }
 
-h1 {
-  padding-bottom: 5px;
-  color: #000;
-}
-
 header h1 {
   font-size: 13px;
-  color: #000;
   font-weight: bold;
+  padding-bottom: 5px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #000;
 }
 
 /* two separate lists but neither require padding nor bullets so adding them to main ul header */
@@ -36,7 +36,7 @@ header nav li {
   font-size: 13px;
 }
 
-a {
+ul a {
   text-decoration: none;
   color: #69696a;
 }
