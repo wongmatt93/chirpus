@@ -1,90 +1,135 @@
 /* resets */
+
 body,
 h1,
-ul {
-  margin: 0px;
-  font-family: "Open Sans", sans-serif;
+p {
+  margin: 0;
 }
 
 body {
-  background-color: #f9fafc;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
 }
 
-header {
-  margin: 12px;
+h1 {
+  font-size: 16px;
 }
 
-header h1 {
-  font-size: 13px;
-  font-weight: bold;
-  padding-bottom: 5px;
-}
-
-h1 a {
-  text-decoration: none;
-  color: #000;
-}
-
-/* two separate lists but neither require padding nor bullets so adding them to main ul header */
-ul {
+nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-header nav li {
-  padding-bottom: 5px;
-  font-size: 13px;
-}
-
-ul a {
+header a {
   text-decoration: none;
   color: #69696a;
+  padding: 5px 5px 5px 0;
+  display: inline-block;
 }
 
-button {
-  border: none;
-  background-color: #000;
-  color: #fff;
+.accent {
+  background-color: black;
+  color: white;
   width: 100%;
-  padding: 10px;
-  border-radius: 19px;
+  text-align: center;
+  border-radius: 20px;
 }
 
-button:hover {
-  cursor: pointer;
+.call-to-action {
+  border-left: 3px solid black;
+  padding-left: 10px;
 }
 
-main {
-  margin: 12px;
+.call-to-action-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 10px;
 }
 
-main p {
-  border-left: 2px solid #69696a;
-  padding-left: 12px;
-  color: #69696a;
-  font-size: 12px;
+.fancy-spheres {
+  display: none;
+  /* position: relative; */
+}
+
+.sphere1 {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color: rgba(247, 136, 167, 0.6);
+  position: absolute;
+  top: 150px;
+  right: 100px;
+}
+
+.sphere2 {
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  background-color: rgba(247, 193, 162, 0.7);
+  position: absolute;
+  top: 300px;
+  right: 10px;
+}
+
+.sphere3 {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  background-color: rgba(207, 130, 213, 0.6);
+  position: absolute;
+  top: 200px;
+  right: 10px;
 }
 
 footer {
   position: fixed;
   bottom: 0;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+  left: 0;
+  right: 0;
   background-color: rgba(247, 193, 162, 0.7);
-  font-size: 12px;
-}
-
-footer p {
-  margin: 8px 12px;
-}
-
-footer ul {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
+  padding: 20px;
 }
 
-footer li {
-  margin-right: 12px;
+footer nav ul {
+  display: flex;
+}
+
+footer a {
+  padding: 5px 0 5px 5px;
+  text-decoration: none;
+  color: #69696a;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header ul {
+    display: flex;
+  }
+  header a {
+    padding: 5px 5px 5px 5px;
+  }
+
+  main {
+    display: flex;
+    width: 50%;
+  }
+
+  .about-us {
+    margin-top: 100px;
+  }
+
+  .fancy-spheres {
+    display: inline;
+    width: 50%;
+  }
 }
