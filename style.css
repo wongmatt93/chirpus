@@ -50,16 +50,16 @@ header a {
 
 .fancy-spheres {
   display: none;
-  /* position: relative; */
+  position: relative;
 }
 
 .sphere1 {
-  height: 250px;
-  width: 250px;
+  height: 225px;
+  width: 225px;
   border-radius: 50%;
   background-color: rgba(247, 136, 167, 0.6);
   position: absolute;
-  top: 150px;
+  top: 100px;
   right: 100px;
 }
 
@@ -69,7 +69,7 @@ header a {
   border-radius: 50%;
   background-color: rgba(247, 193, 162, 0.7);
   position: absolute;
-  top: 300px;
+  top: 225px;
   right: 10px;
 }
 
@@ -79,7 +79,7 @@ header a {
   border-radius: 50%;
   background-color: rgba(207, 130, 213, 0.6);
   position: absolute;
-  top: 200px;
+  top: 125px;
   right: 10px;
 }
 
@@ -121,11 +121,11 @@ footer a {
 
   main {
     display: flex;
-    width: 50%;
   }
 
   .about-us {
     margin-top: 100px;
+    width: 50%;
   }
 
   .fancy-spheres {
